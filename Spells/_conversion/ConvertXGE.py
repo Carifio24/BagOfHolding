@@ -31,7 +31,7 @@ def parse_components(components_string):
 
 
 # Get the XGE spell data JSON
-fname = "XGESpells.json"
+fname = "XGESpellsRAW.json"
 f = open(fname)
 xgedata = f.read()
 f.close()
@@ -92,7 +92,7 @@ for s in spells:
 
 
 # Write to  file
-outfile = "XGESpells_converted.json"
+outfile = "Spells_XGE.json"
 with open(outfile, 'w') as f:
 	f.write("[\n")
 	for x in converted_data:
